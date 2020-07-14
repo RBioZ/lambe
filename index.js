@@ -2,7 +2,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
-import Navigator from './src/Navigator';
+import App from './src/App';
 
 import storeConfig from './src/store/storeConfig';
 
@@ -12,7 +12,7 @@ axios.defaults.baseURL = 'https://lambe-3f5ae.firebaseio.com/'
 const store = storeConfig()
 const Redux = () => (
   <Provider store={store}>
-    <Navigator />
+    <App />
   </Provider>
 )
 

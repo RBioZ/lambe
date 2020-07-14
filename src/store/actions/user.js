@@ -76,12 +76,6 @@ export const login = user => {
           password: user.password,
           returnSecureToken: true
       })
-          .catch(err => {
-              dispatch(setMessage({
-                  title: 'Erro',
-                  text: 'Ocorreu um erro inesperado!'
-              }))
-          })
           .then(res => {
               if (res.data.localId) {
                   user.token = res.data.idToken
@@ -100,5 +94,11 @@ export const login = user => {
                       })
               }
           })
+          .catch(err => {
+            dispatch(setMessage({
+                title: 'Erro',
+                text: 'Ocorreu um erro inesperado!'
+            }))
+        })
   }
 }

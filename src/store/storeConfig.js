@@ -6,11 +6,13 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 import useReducer from './reducers/user';
-import postsReducer from './reducers/posts'
+import postsReducer from './reducers/posts';
+import messageReducer from './reducers/message';
 
 const reducers = combineReducers({
   user: useReducer,
-  posts: postsReducer
+  posts: postsReducer,
+  message:messageReducer
 })
 
 const storeConfig = () => {
