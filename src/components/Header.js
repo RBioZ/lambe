@@ -22,7 +22,7 @@ class Header extends Component{
       <View style={styles.container}>
         <View style={styles.rowContainer}>
           <Image source={icon} style={styles.image} />
-          <Text style={styles.title}>Shared</Text>
+          <Text style={styles.title}>Shared </Text>
         </View>
         <View style={styles.userContainer}>
           <Text style={styles.user}>{name}</Text>
