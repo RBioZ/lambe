@@ -1,5 +1,6 @@
 ### Lambe
-Instagram Clone
+Instagram Clone (Shared)
 
 
 - Firebase
+- Redux
